@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #f4f7fb, #e2e7ef);
+      color: #222;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Logo Section */
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo img {
+      width: 250px;
+    }
+
+    /* Navigation Bar */
+    .navigation {
+      display: flex;
+      justify-content: center;
+      background-color: #1d3557;
+      padding: 15px 0;
+      gap: 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    .navigation a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      letter-spacing: 0.5px;
+    }
+
+    .navigation a:hover {
+      color: #ffcc00;
+      transform: scale(1.05);
+    }
+
+    /* Main Content */
+    .content {
+      display: flex;
+      flex: 1;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Sidebar */
+    .side_bar {
+      flex-basis: 25%;
+      background-color: #1d3557;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .side_bar h3 {
+      margin-bottom: 10px;
+      color: #ffcc00;
+      border-bottom: 2px solid #ffcc00;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .side_bar ul {
+      list-style-type: none;
+      margin-top: 10px;
+    }
+
+    .side_bar li {
+      margin-top: 10px;
+    }
+
+    .side_bar a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .side_bar a:hover {
+      color: #ffcc00;
+      padding-left: 5px;
+    }
+
+    /* Body Area */
+    .body_area {
+      flex-basis: 75%;
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .side_bar, .body_area {
+        flex-basis: 100%;
+      }
+
+      .navigation {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo">
+      <img src="4e732ced3463d06de0ca9a15b6153677.png" alt="UTHM Logo">
+    </div>
+
+    <div class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Administration</a>
+      <a href="#">Courses</a>
+      <a href="contact_us.html">Contact Us</a>
+    </div>
+
+    <div class="content">
+      <div class="side_bar">
+        <h3>Preferred Links</h3>
+        <ul>
+          <li><a href="biodata.html">Biodata</a></li>
+          <li><a href="#" target="_blank">Hobby</a></li>
+          <li><a href="#" target="_blank">Campus Life</a></li>
+        </ul>
+      </div>
+
+      <div class="body_area">
+        <h2>About Me</h2>
+        <br>
+        <p>
+        My name is Alimi Irfan, a dedicated and motivated student who is passionate about technology and continuous learning. I enjoy exploring new ideas, especially in areas related to data science, artificial intelligence, and software development. Throughout my studies, I’ve developed a strong interest in problem-solving and creating practical solutions that can improve everyday life. I always try to balance creativity and logic in everything I do, whether it’s coding, designing, or learning new concepts.</p>
+        <br>
+        <p>
+        Besides academics, I’m also a person who values discipline, teamwork, and self-improvement. I believe in setting clear goals and working consistently towards them. I enjoy collaborating with others, sharing knowledge, and learning from different perspectives. In the future, I aim to become a Data Scientist, contributing to innovations that use data and AI to make smarter and more sustainable decisions.        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Universiti Tun Hussein Onn Malaysia | Designed by Irfan Ahmad
+    </div>
+
+  </div>
+</body>
+</html>
