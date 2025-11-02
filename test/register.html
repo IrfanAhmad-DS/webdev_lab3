@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Register</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f8;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    h2:hover {
+      color: #4CAF50;
+    }
+
+    .form-container {
+      width: 300px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    .video-container {
+      width: 600px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    label {
+      display: flex;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 280px;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background-color: #f2f2f2;
+    }
+
+    .box {
+      background-color: lightblue;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    /* Header styling */
+    .header {
+      display: flex;
+      align-items: center;       /* Align image and text vertically */
+      justify-content: center;   /* Center the whole header horizontally */
+      background-color: burlywood;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 5px;
+      gap: 20px;                 /* Add space between image and text */
+    }
+
+    img {
+      border-radius: 5px;
+      background-color: #45a049;
+      padding: 5px;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      color: aqua;
+      background-color: #333;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="gambarpassport.jpeg" width="110" height="150" alt="my picture">
+    <h1>Nur 'Alimi Irfan bin Ahmad</h1>
+  </div>
+
+  <div class="form-container">
+    <h2>Login</h2>
+    <form action="#" method="post">
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <label>Password:</label>
+      <input type="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="form-container">
+    <h2>Register</h2>
+    <form action="#" method="post">
+      <label>Full Name:</label>
+      <input type="text" name="fullname" placeholder="Enter your name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <label>Password:</label>
+      <input type="password" name="password" placeholder="Create a password" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <div class="video-container">
+    <h2>Watch This Video</h2>
+    <iframe
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="container">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+</body>
+</html>

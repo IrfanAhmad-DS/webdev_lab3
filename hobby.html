@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #f4f7fb, #e2e7ef);
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Logo Section */
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo img {
+      width: 250px;
+    }
+
+    /* Navigation Bar */
+    .navigation {
+      display: flex;
+      justify-content: center;
+      background-color: #1d3557;
+      padding: 15px 0;
+      gap: 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    .navigation a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      letter-spacing: 0.5px;
+    }
+
+    .navigation a:hover {
+      color: #ffcc00;
+      transform: scale(1.05);
+    }
+
+    /* Content Section */
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hobby {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 25px;
+      margin: 20px 0;
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .hobby h2 {
+      color: #1d3557;
+      margin-bottom: 10px;
+    }
+
+    .hobby p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .navigation {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="4e732ced3463d06de0ca9a15b6153677.png" alt="UTHM Logo">
+  </div>
+
+  <!-- Navigation -->
+  <div class="navigation">
+    <a href="lab3.html">Home</a>
+    <a href="contact_me.html">Contact Me</a>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <h1 style="color:#1d3557; margin-bottom: 20px;">My Hobbies</h1>
+
+    <div class="hobby">
+      <h2>Playing DOTA</h2>
+      <p>I enjoy playing DOTA with friends during my free time. It helps improve teamwork and strategy.</p>
+      <iframe 
+        src="https://www.youtube.com/embed/f4Mq1cs0_6Y?si=gDJ4xM98OPASPyYR"
+        title="DOTA Gameplay"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="hobby">
+      <h2>Riding Motorcycle</h2>
+      <p>Riding gives me a sense of freedom and relaxation. I often go for long rides on weekends.</p>
+      <iframe 
+        src="https://www.youtube.com/embed/KcnFl41nITg?si=nqWJQE-09JAQJ1s4"
+        title="Motorcycle Ride"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="hobby">
+      <h2>Coding</h2>
+      <p>I love learning new programming languages and building projects that solve real-world problems.</p>
+      <iframe 
+        src="https://www.youtube.com/embed/pTB0EiLXUC8"
+        title="Learn Coding Basics"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 Universiti Tun Hussein Onn Malaysia | Designed by Irfan Ahmad
+  </div>
+
+</body>
+</html>
